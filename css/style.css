@@ -45,6 +45,10 @@ h1 {
 }
 
 /* theme-swipe-list */
+.theme-swipe-list.is-left .list-btn {
+  right: auto;
+  left: 0;
+}
 .theme-swipe-list .list {
   font-size: 14px;
   line-height: 1.5;
