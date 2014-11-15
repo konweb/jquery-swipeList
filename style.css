@@ -1,0 +1,77 @@
+body {
+  background: #eceff1;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 15px;
+}
+
+.swipe-list .list {
+  display: table;
+  height: 100%;
+  position: relative;
+}
+.swipe-list .list .list-body {
+  position: relative;
+  z-index: 10;
+}
+.swipe-list .list .list-contents {
+  padding: 15px;
+  background: #fafafa;
+}
+.swipe-list .list .list-arrow {
+  color: #fff;
+  padding: 10px;
+  background: #00897b;
+  vertical-align: middle;
+}
+.swipe-list .list .list-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swipe-list .list .list-btn ul {
+  display: table;
+  height: 100%;
+}
+.swipe-list .list .list-btn li {
+  color: #fff;
+  display: table-cell;
+  height: 100%;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+/* theme-swipe-list */
+.theme-swipe-list .list {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.theme-swipe-list .list .list-cell {
+  display: table-cell;
+}
+.theme-swipe-list .list .list-body {
+  border: solid 1px #e0e0e0;
+}
+.theme-swipe-list .list .titile {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #90a4ae;
+}
+.theme-swipe-list .list .list-btn {
+  height: 100%;
+}
+.theme-swipe-list .list .list-btn li:nth-child(1) {
+  background: #fb8c00;
+}
+.theme-swipe-list .list .list-btn li:nth-child(2) {
+  background: #546e7a;
+}
+.theme-swipe-list .list .list-btn li:nth-child(3) {
+  background: #dd191d;
+}

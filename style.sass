@@ -1,0 +1,75 @@
+@import "compass"
+@import "compass/support"
+// $supported-browsers:reject(browsers(),android,blackberry,chrome,android-chrome,firefox,android-firefox,ie,ie-mobile,safari,ios-safari,opera,opera-mini,opera-mobile)
+
+body
+	background: #eceff1
+
+h1
+	font-size: 30px
+	line-height: 1.5
+	margin: 15px
+
+
+.swipe-list
+	.list
+		display: table
+		height: 100%
+		position: relative
+		.list-body
+			position: relative
+			z-index: 10
+
+		.list-contents
+			padding: 15px
+			background: #fafafa
+
+		.list-arrow
+			color: #fff
+			padding: 10px
+			background: #00897b
+			vertical-align: middle
+
+		.list-btn
+			position: absolute
+			top: 0
+			right: 0
+			ul
+				display: table
+				height: 100%
+			li
+				color: #fff
+				display: table-cell
+				height: 100%
+				padding: 15px
+				vertical-align: middle
+
+/* theme-swipe-list */
+.theme-swipe-list
+	.list
+		font-size: 14px
+		line-height: 1.5
+		margin-bottom: 15px
+
+		.list-cell
+			display: table-cell
+
+		.list-body
+			border: solid 1px #e0e0e0
+
+		.titile
+			font-size: 18px
+			font-weight: bold
+			margin-bottom: 5px
+			padding-bottom: 5px
+			border-bottom: solid 2px #90a4ae
+
+		.list-btn
+			height: 100%
+			li
+				&:nth-child(1)
+					background: #fb8c00
+				&:nth-child(2)
+					background: #546e7a
+				&:nth-child(3)
+					background: #dd191d
