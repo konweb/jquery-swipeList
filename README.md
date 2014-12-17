@@ -1,10 +1,5 @@
 jquery-swipeList
-<<<<<<< HEAD
 ================
-
-# [Example](http://konweb.github.io/jquery-swipeList/)
-=======
-===================
 
 MIT license. [example](http://konweb.github.io/jquery-swipeList/)
 
@@ -91,4 +86,3 @@ $(function(){
 | btnEle | element | Parent button element |
 | speed | number | Animation speed |
 | direction | string | Swipe direction |
->>>>>>> master
