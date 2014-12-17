@@ -3,13 +3,17 @@
     /**
      * @prop targetEle {element} [.js-swipeListTarget] スワイプターゲット要素
      * @prop btnEle {element} ボタン親要素
+     * @prop triggerMove {number} [60] スワイプトリガー数値
      * @prop speed {number} アニメーションスピード
+     * @prop easing {string} [ease] イージング
      * @prop direction {string} スワイプ方向
     */
     op = $.extend({
       targetEle : ".js-swipeListTarget",
       btnEle : ".js-swipeListBtn",
+      triggerMove: 60,
       speed: 300,
+      easing: "ease",
       direction: "left"
     },op);
 
@@ -33,7 +37,7 @@
           this.start = e.originalEvent.touches[0].pageX;
           $this.find(op.targetEle).css("transition", "all 1ms ease");
           if(this.flagMove){
-            $this.find(op.targetEle).css("transition", "all " + op.speed + "ms ease");
+            $this.find(op.targetEle).css("transition", "all " + op.speed + "ms " + op.easing + "");
             $this.find(op.targetEle).css("transform", "translate3d(0, 0, 0)");
             this.move = 0;
             this.moveVal = 0;
@@ -73,16 +77,16 @@
         */
         swipeEnd: function(e){
           this.baseVal = $this.find(op.btnEle).innerWidth();
-          $this.find(op.targetEle).css("transition", "all " + op.speed + "ms ease");
+          $this.find(op.targetEle).css("transition", "all " + op.speed + "ms " + op.easing + "");
           if(op.direction == "left"){
-            if(this.moveVal > 60){
+            if(this.moveVal > op.triggerMove){
               $this.find(op.targetEle).css("transform", "translate3d(-" + this.baseVal + "px, 0, 0)");
               this.flagMove = true;
             }else{
               $this.find(op.targetEle).css("transform", "translate3d(0, 0, 0)");
             }
           }else{
-            if(this.moveVal < 60){
+            if(this.moveVal < "-" + op.triggerMove){
               $this.find(op.targetEle).css("transform", "translate3d(" + Math.abs(this.baseVal) + "px, 0, 0)");
               this.flagMove = true;
             }else{
