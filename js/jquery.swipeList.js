@@ -3,7 +3,9 @@
     /**
      * @prop targetEle {element} [.js-swipeListTarget] スワイプターゲット要素
      * @prop btnEle {element} ボタン親要素
+     * @prop triggerMove {number} [60] スワイプトリガー数値
      * @prop speed {number} アニメーションスピード
+     * @prop easing {string} [ease] イージング
      * @prop direction {string} スワイプ方向
     */
     op = $.extend({

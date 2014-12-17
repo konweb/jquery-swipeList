@@ -84,5 +84,7 @@ $(function(){
 |:-----------|:-----------|:------------|
 | targetEle | element | [.js-swipeListTarget] Swipe the target element |
 | btnEle | element | Parent button element |
+| triggerMove | number | Swipe trigger number |
 | speed | number | Animation speed |
+| easing | string | [ease] Easing |
 | direction | string | Swipe direction |
