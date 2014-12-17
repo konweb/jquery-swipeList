@@ -75,7 +75,8 @@ $(function(){
       </ul>
     </div>
   </div>
-</div>```
+</div>
+```
 
 
 ## Options
