@@ -1,7 +1,7 @@
 jquery-swipeList
 ================
 
-MIT license.
+MIT license.  
 [example](http://konweb.github.io/jquery-swipeList/) Take a look at smart phones
 
 ## Installation
